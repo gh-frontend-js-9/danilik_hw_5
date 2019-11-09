@@ -1,0 +1,25 @@
+p {
+  margin: 0;
+}
+
+
+.text {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: bold; 
+
+  &::after {
+    content: '.';
+    color: #fa5c65;
+  }
+
+}
+
+.descr {
+  color: #9aa0ab;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 24px;
+}

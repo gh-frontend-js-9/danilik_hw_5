@@ -1,0 +1,57 @@
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  height: 100%;
+}
+
+.header-logo {
+  width: 140px;
+  height: 74px;
+  background-color: #fa5c65;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__text {
+    display: block;
+    color: #ffffff;
+    font-family: Domine;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 63.95px;
+  }
+  &__dot {
+    color: #314a5b;
+  }
+}
+
+.main-nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+
+    &:not(:last-child) { margin-right: 40px; }
+  }
+
+  &__link {
+    color: #263742;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 85px;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    color: #fa5c65;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,45 @@
+.s-banner {
+  background-image: url(../../images/banner.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &__wrapper {
+    padding-top: 20%;
+  }
+
+  &__title {
+    width: 80%;
+    color: #314a5b;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+&__description {
+  color: #314a5b;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40.35px;
+  }
+
+  &__btn {
+    padding: 8px 40px;
+    background-color: #fa5c65;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 48.38px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    margin-top: 40px;
+  }
+}

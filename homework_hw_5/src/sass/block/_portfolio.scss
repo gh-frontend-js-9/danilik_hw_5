@@ -1,0 +1,26 @@
+.s-portfolio {
+  display: flex;
+  justify-content: space-between;
+  &-img-block {
+    width: 45%;
+  }
+
+  &-text-block {
+    width: 45%;
+
+    &__title {
+      color: #314a5b;
+      font-size: 40px;
+      line-height: 46px;
+    }
+    &__subtitle {
+      color: #314a5b;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__descr {
+      width: 367px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Footer
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &-social-block {
+    display: flex;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+    }
+
+    &__icon {
+      font-size: 20px;
+      color: #b9c0c6;
+    }
+  }
+
+  &-copyright-block {
+    &__text {
+      margin-top: 0;
+    }
+  }
+}

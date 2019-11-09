@@ -1,0 +1,31 @@
+.s-snippets {
+  display: flex;
+  justify-content: space-between;
+
+  &-block {
+
+    flex-basis: 25%;
+
+    // &:not(:last-child) {
+    //   margin-right: 63px;
+    // }
+
+    &__title {
+      width: 57%;
+      color: #465065;
+      font-size: 26px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-weight: 700;
+
+      &--w87 {
+        width: 87%;
+      }
+    } 
+
+    &__arrow {
+      padding-left: 7px;
+    }
+  }
+}
