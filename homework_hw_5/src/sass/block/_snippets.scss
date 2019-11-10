@@ -17,15 +17,12 @@
       line-height: 26px;
       text-transform: uppercase;
       margin-bottom: 0;
-      font-weight: 700;
+      font-weight: $font-weight-bold;
 
-      &--w87 {
-        width: 87%;
+      &--w95p {
+        width: 95%;
       }
-    } 
-
-    &__arrow {
-      padding-left: 7px;
     }
+
   }
 }

@@ -20,13 +20,13 @@
   &__text {
     display: block;
     color: #ffffff;
-    font-family: Domine;
+    font-family: $font-family--domine;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     line-height: 63.95px;
   }
   &__dot {
-    color: #314a5b;
+    color: $text-color3;
   }
 }
 
@@ -38,14 +38,20 @@
 
   &__item {
 
-    &:not(:last-child) { margin-right: 40px; }
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include max-w(808px) { 
+        margin-right: 20px;
+      }
+    }
   }
 
   &__link {
     color: #263742;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight-bold;
     line-height: 85px;
     text-transform: uppercase;
   }

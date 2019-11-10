@@ -9,18 +9,19 @@
     width: 45%;
 
     &__title {
-      color: #314a5b;
+      color: $title-color;
       font-size: 40px;
       line-height: 46px;
     }
     &__subtitle {
-      color: #314a5b;
+      color: $text-color3;
       font-size: 16px;
       line-height: 20px;
+      font-weight: $font-weight-bold;
     }
 
     &__descr {
-      width: 367px;
+
     }
   }
 }

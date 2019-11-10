@@ -4,21 +4,20 @@ p {
 
 
 .text {
-  font-family: Montserrat;
+  font-family: $font-family;
   text-transform: uppercase;
-  font-weight: bold; 
-
+  font-weight: $font-weight-bold;
   &::after {
     content: '.';
-    color: #fa5c65;
+    color: $text-color2;
   }
 
 }
 
 .descr {
-  color: #9aa0ab;
-  font-family: "Open Sans";
-  font-size: 15px;
+  color: $text-color;
+  font-family: $font-family--open-sans;
+  font-size: $font-size2;
   font-weight: 400;
   line-height: 22px;
   margin-top: 24px;
