@@ -1,12 +1,28 @@
 .s-portfolio {
   display: flex;
   justify-content: space-between;
+
+  @include max-w(550px) {
+    flex-direction: column;
+  }
+
   &-img-block {
     width: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include max-w(550px) {
+      width: 100%;
+    }
   }
 
   &-text-block {
     width: 45%;
+
+    @include max-w(550px) {
+      width: 100%;
+
+    }
 
     &__title {
       color: $title-color;
@@ -24,4 +40,9 @@
 
     }
   }
+}
+
+.person-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

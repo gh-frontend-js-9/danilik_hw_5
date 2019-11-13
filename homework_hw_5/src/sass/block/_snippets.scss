@@ -2,9 +2,17 @@
   display: flex;
   justify-content: space-between;
 
-  &-block {
+  @include max-w(768px) {
+    flex-direction: column;
+  }
 
+  &-block {
     flex-basis: 25%;
+
+    @include max-w(768px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
 
     // &:not(:last-child) {
     //   margin-right: 63px;

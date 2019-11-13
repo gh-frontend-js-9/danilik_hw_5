@@ -3,9 +3,12 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   padding-top: 0;
   padding-bottom: 0;
+
+  @include max-w(768px) {
+    background-position: center;
+  }
 
   &__wrapper {
     padding-top: 20%;
@@ -15,7 +18,7 @@
     width: 80%;
     color: $title-color;
     font-family: $font-family;
-    font-size: 48px;
+    @include fluid-font(28px, 48px, 320px, 1480px);
     font-weight: bold;
     line-height: 53px;
     text-transform: uppercase;

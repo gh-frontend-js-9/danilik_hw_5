@@ -27,6 +27,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+
+    @include max-w(768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__btn {

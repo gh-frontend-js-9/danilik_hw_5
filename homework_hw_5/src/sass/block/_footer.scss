@@ -5,6 +5,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  @include max-w(550px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-social-block {
     display: flex;
 
@@ -21,6 +26,12 @@
   }
 
   &-copyright-block {
+
+    @include max-w(550px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+
     &__text {
       margin-top: 0;
     }
