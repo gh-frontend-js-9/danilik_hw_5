@@ -1,0 +1,22 @@
+// Import files
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'base';
+@import 'typography';
+@import 'sprite';
+
+@import 'elements/form-elements';
+@import 'elements/buttons';
+@import 'elements/texts';
+
+
+@import 'block/banner';
+@import 'block/header';
+@import 'block/snippets';
+@import 'block/portfolio';
+@import 'block/our-team';
+@import 'block/footer';
+
+@import 'pages/home';

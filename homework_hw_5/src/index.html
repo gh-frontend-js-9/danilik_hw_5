@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HW_5</title>
+	<meta name="description" content="">
+	@@include('_include/head.html')
+</head>
+
+<body>
+
+  <section class="s-banner">
+
+    @@include('_include/header.html')
+    <div class="s-banner__wrapper page-container">
+    <h1 class="text s-banner__title">intelligence<br>
+    is nothing without
+    ambition</h1>
+    <p class="s-banner__description">We’re small but impressive creative agency.</p>
+    <button class="s-banner__btn">READ MORE</button>
+  </div>
+  </section>
+
+  <main class="page-container">
+
+    <section class="s-snippets">
+      <div class="s-snippets-block">
+        <h3 class="text s-snippets-block__title">Peace <br>of Mind</h3>
+        <p class="descr">You’re safe with us. The privacy and security of your financial information is our top priority.</p>
+        <button class="btn">More<i class="fas fa-arrow-right arrow"></i></button>
+      </div>
+      <div class="s-snippets-block">
+        <h3 class="s-snippets-block__title s-snippets-block__title--w95p"><span class="text">Free</span> <br>
+            Actually free</h3>
+        <p class="descr">No more pricing grids. No more fine print.
+          Sending and receiving cash is free without gimmicks.</p>
+        <button class="btn">More<i class="fas fa-arrow-right arrow"></i></button>
+      </div>
+      <div class="s-snippets-block">
+        <h3 class="text s-snippets-block__title">Simple
+            payments</h3>
+        <p class="descr">The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+        <button class="btn">More<i class="fas fa-arrow-right arrow"></i></button>
+      </div>
+    </section>
+
+    <section class="s-portfolio">
+      <div class="s-portfolio-img-block">
+        <img src="images/MacBook.png" alt="MacBook">
+      </div>
+      <div class="s-portfolio-text-block">
+        <h2 class="text s-portfolio-text-block__title">portfolio</h2>
+        <p class="s-portfolio-text-block__subtitle">We are small, but strong team</p>
+        <p class="descr s-portfolio-text-block__descr">No more pricing grids. No more fine print.
+            Sending and receiving cash is free without gimmicks.</p>
+        <p class="descr s-portfolio-text-block__descr">The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+        <button class="btn">More<i class="fas fa-arrow-right s-snippets-block__arrow arrow"></i></button>
+      </div>
+    </section>
+
+    <section class="s-our-team">
+      <div class="s-our-team-title-block">
+      <h2 class="text s-our-team-title-block__title">our team</h2>
+      <p class="descr s-our-team-title-block__descr">They are big but still friendly.</p>
+    </div>
+      <div class="s-our-team-container">
+        <div class="person-block">
+          <div class="person-block__photo">
+              <img src="images/1.png" alt="person"  class="person-img-block__photo">
+          </div>
+          <div class="person-text-block">
+            <p class="person-text-block__name">Joey</p>
+            <p class="person-text-block__job">Web developer</p>
+            <p class="person-text-block__descr">Coffee lover.  Always on bike. iPhone fan.</p>
+          </div>
+        </div>
+        <div class="person-block">
+          <div class="person-block__photo">
+              <img src="images/2.png" alt="person" class="person-img-block__photo">
+          </div>
+          <div class="person-text-block">
+            <p class="person-text-block__name">Matt</p>
+            <p class="person-text-block__job">Web designer</p>
+            <p class="person-text-block__descr">MTB Biker. Photoshop Master. Loving Father.</p>
+          </div>
+        </div>
+        <div class="person-block">
+          <div class="person-block__photo">
+              <img src="images/3.png" alt="person"  class="person-img-block__photo">
+          </div>
+          <div class="person-text-block">
+            <p class="person-text-block__name">Mike</p>
+            <p class="person-text-block__job">Copywriter</p>
+            <p class="person-text-block__descr">Drummer. Soup lover. Beer Drinker. Cyclist.</p>
+          </div>
+        </div>
+      </div>
+        <button class="btn s-our-team__btn">More<i class="fas fa-arrow-right s-snippets-block__arrow arrow"></i></button>
+    </section>
+
+  </main>
+
+	@@include('_include/footer.html')
+	@@include('_include/inc_script.html')
+</body>
+</html>

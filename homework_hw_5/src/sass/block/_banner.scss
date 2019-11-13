@@ -1,0 +1,49 @@
+.s-banner {
+  background-image: url(../../images/banner.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include max-w(768px) {
+    background-position: center;
+  }
+
+  &__wrapper {
+    padding-top: 20%;
+  }
+
+  &__title {
+    width: 80%;
+    color: $title-color;
+    font-family: $font-family;
+    @include fluid-font(28px, 48px, 320px, 1480px);
+    font-weight: bold;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    color: $text-color3;
+    font-family: $font-family--open-sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40.35px;
+  }
+
+  &__btn {
+    padding: 8px 40px;
+    background-color: $btn-color;
+    color: #ffffff;
+    font-family: $font-family--open-sans;
+    font-size: $font-size2;
+    font-weight: $font-weight-bold;
+    line-height: 48.38px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    margin-top: 40px;
+  }
+}

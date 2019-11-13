@@ -1,0 +1,24 @@
+p {
+  margin: 0;
+}
+
+
+.text {
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  &::after {
+    content: '.';
+    color: $text-color2;
+  }
+
+}
+
+.descr {
+  color: $text-color;
+  font-family: $font-family--open-sans;
+  font-size: $font-size2;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 24px;
+}

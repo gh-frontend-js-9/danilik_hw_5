@@ -1,0 +1,39 @@
+// Footer
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include max-w(550px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-social-block {
+    display: flex;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+    }
+
+    &__icon {
+      font-size: 20px;
+      color: $icon-color2;
+    }
+  }
+
+  &-copyright-block {
+
+    @include max-w(550px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__text {
+      margin-top: 0;
+    }
+  }
+}

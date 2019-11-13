@@ -1,0 +1,36 @@
+.s-snippets {
+  display: flex;
+  justify-content: space-between;
+
+  @include max-w(768px) {
+    flex-direction: column;
+  }
+
+  &-block {
+    flex-basis: 25%;
+
+    @include max-w(768px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    // &:not(:last-child) {
+    //   margin-right: 63px;
+    // }
+
+    &__title {
+      width: 57%;
+      color: #465065;
+      font-size: 26px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      font-weight: $font-weight-bold;
+
+      &--w95p {
+        width: 95%;
+      }
+    }
+
+  }
+}

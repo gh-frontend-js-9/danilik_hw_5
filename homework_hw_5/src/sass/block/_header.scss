@@ -1,0 +1,137 @@
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  height: 100%;
+  cursor: pointer;
+}
+
+.header-logo {
+  width: 140px;
+  height: 74px;
+  background-color: #fa5c65;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__text {
+    display: block;
+    color: #ffffff;
+    font-family: $font-family--domine;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    line-height: 63.95px;
+  }
+  &__dot {
+    color: $text-color3;
+  }
+}
+
+.main-nav {
+
+
+  &__list {
+    display: flex;
+
+    @include max-w(768px) {
+      display: none;
+    }
+
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include max-w(768px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: #263742;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight-bold;
+    line-height: 85px;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    color: #fa5c65;
+    font-size: 16px;
+  }
+}
+
+// Mobile menu
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: 0 none;
+  display: none;
+  font-size: 25px;
+  color: #dc3545;
+  z-index: 2  ;
+
+  @include max-w(768px) {
+    display: block;
+  }
+
+}
+
+.m-main-nav__list {
+  display: flex;
+  padding-left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dc3545;
+  transition: 0.2s;
+  transform: translateX(100%);
+  z-index: 2;
+
+  &--active {
+    transform: translateX(0%);
+  }
+
+  & .main-nav__link {
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  & .main-nav__icon {
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    margin: 15px;
+  }
+
+  & div {
+    display: flex;
+  }
+}
+
+.close-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 6;
+}
